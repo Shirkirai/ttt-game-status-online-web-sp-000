@@ -93,5 +93,9 @@ end
 def draw?(board)
   if full?(board) != 0
     return true
+  elsif won?(board) == [0,1,2] || won?(board) == [0,5,8]
+    return false
+  elsif full?(board) == 0
+    false
   end
 end
