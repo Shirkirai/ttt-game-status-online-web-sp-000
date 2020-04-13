@@ -66,10 +66,16 @@ def won?(board)
   WIN_COMBINATIONS.each do |one_set_of_winning_combination|
     one_set_of_winning_combination.each do |index|
       if position_taken?(board, "#{index}".to_i) == "X" || position_taken?(board, "#{index}".to_i) == "O"
-        return "#{index}"
+        "#{index}"
       else
         !position_taken?(board, index)
       end
     end
   end
 end
+
+def won?(board)
+  WIN_COMBINATIONS.each do |set_of_wc|
+    win_index_1 = win_set_of_wc[0]
+    set_of_wc.each do |index|
+      if position_taken?(board, index) == 0 && index
