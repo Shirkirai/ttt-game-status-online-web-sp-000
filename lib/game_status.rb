@@ -68,7 +68,7 @@ def won?(board)
       if position_taken?(board, "#{index}".to_i) == "X" || position_taken?(board, "#{index}".to_i) == "O"
         return "#{index}"
       else
-        !position_taken(board, index)
+        !position_taken?(board, index)
       end
     end
   end
