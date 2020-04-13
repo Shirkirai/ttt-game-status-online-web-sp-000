@@ -79,5 +79,4 @@ def won?(board)
     win_index_1 = set_of_wc[0]
     win_index_2 = set_of_wc[1]
     win_index_3 = set_of_wc[2]
-    set_of_wc.each do |index|
-      if position_taken?(board, index) == 0 && index
+    if position_taken?(board, win_index_1) == "X" || position_taken?(board, win_index_1)"O"
