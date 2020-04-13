@@ -95,7 +95,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if draw?(board) && won?(board)
+  if draw?(board) || won?(board)
     return true
   else
     return false
