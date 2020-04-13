@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     combination.each do |position|
-      if "#{position}" = ["X", "X", "X"].all? == 0
+      if "#{position}" = ["X", "X", "X"].all?
         combination
       else
         nil
