@@ -81,3 +81,8 @@ def won?(board)
     win_index_3 = set_of_wc[2]
     if position_taken?(board, win_index_1) == "X" || position_taken?(board, win_index_1) == "O" && position_taken?(board, win_index_2) == "X" || position_taken?(board, win_index_2) == "O" && position_taken?(board, win_index_3) == "X" && position_taken?(board, win_index_3) == "O"
       return set_of_wc
+    else
+      false
+    end
+  end
+end
