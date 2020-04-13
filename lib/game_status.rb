@@ -104,7 +104,7 @@ end
 
 def winner(board)
   if over?(board)
-    return "X" && "O"
+    "X" && "O"
   else
     return nil
   end
