@@ -101,7 +101,7 @@ end
 def over?(board)
   if draw?(board) == 0
     return true
-  elsif won?(board) == win_combo && full?(board) == 0
+  elsif won?(board) == 0 && full?(board) == 0
     return true
   end
 end
