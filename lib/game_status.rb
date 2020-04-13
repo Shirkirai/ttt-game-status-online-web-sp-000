@@ -99,7 +99,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if draw?(board) == 0
+  if draw?(board) != 0
     return true
   end
 end
