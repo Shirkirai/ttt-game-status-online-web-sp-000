@@ -24,6 +24,7 @@ def won?(board)
         false
       else
         "#{combination}"
+      end
     end
   end
 end
