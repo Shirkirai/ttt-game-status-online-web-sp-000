@@ -83,23 +83,4 @@ def won?(board)
 end
 
 def full?(board)
-  if board.any?{|blank_space| blank_space == "" || blank_space == " "}
-    return false
-  elsif !won?(board)
-    return true
-  end
-end
-
-def draw?(board)
-  if won?(board) == [0,1,2] || won?(board) == [0,4,8]
-    return false
-  elsif full?(board) != 0
-    return true
-  end
-end
-
-def over?(board)
-  if draw?(board) != 0
-    return true
-  end
-end
+  if board.all{|index| index = "X" || index = "O"}
