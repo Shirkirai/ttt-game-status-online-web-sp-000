@@ -99,3 +99,7 @@ def draw?(board)
 end
 
 def over?(board)
+  if draw?(board) == 0
+    return true
+  elsif won?(board) == win_combo && full?(board) == 0
+    return true
