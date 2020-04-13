@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     combination.each do |position|
-      if !position_taken?(board, index)
+      if position_taken?(board, index)
         false
       else
         "#{combination}"
