@@ -67,5 +67,10 @@ def won?(board)
     set_of_winning_combination.each do |single_winning_combination|
       if position_taken?(board, index) == 0
         return "#{single_winning_combination}"
+      else
+        false
+      end
+    end
+    
   end
 end
