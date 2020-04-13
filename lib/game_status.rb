@@ -76,6 +76,6 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.each do |set_of_wc|
-    win_index_1 = win_set_of_wc[0]
+    win_index_1 = set_of_wc[0]
     set_of_wc.each do |index|
       if position_taken?(board, index) == 0 && index
