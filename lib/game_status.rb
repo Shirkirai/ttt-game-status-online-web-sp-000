@@ -22,3 +22,9 @@ def won?(board)
     combination.each do |position|
       if "#{position}" = ["X", "X", "X"].all? == 0
         combination
+      else
+        nil
+      end
+    end
+  end
+end
