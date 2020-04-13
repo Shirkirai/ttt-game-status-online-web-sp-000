@@ -107,7 +107,7 @@ def winner(board)
   if win_index == false
     return nil
   else
-    if board[index[0]] == "X"
+    if board[win_index[0]] == "X"
       return "X"
     else
       return "O"
