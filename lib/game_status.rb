@@ -83,5 +83,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|index| index = "X" || index = "O"}
+  if board.all?{|index| index = "X" || index = "O"}
+    true
+  else
+    false
 end
