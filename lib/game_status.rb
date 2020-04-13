@@ -93,3 +93,5 @@ end
 def draw?(board)
   if full?(board) == 0
     return true
+  end
+end
