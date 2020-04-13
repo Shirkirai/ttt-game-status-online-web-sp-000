@@ -19,12 +19,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-    combination.each do |index|
-      if !position_taken?(board, index)
-        true
-      else
-        "#{combination}"
-      end
-    end
+    falsey
   end
 end
