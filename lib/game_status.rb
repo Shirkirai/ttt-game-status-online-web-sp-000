@@ -72,7 +72,7 @@ def won?(board)
         position_taken?(board, win_index_2) == "X" || position_taken?(board, win_index_2) == "O" &&
         position_taken?(board, win_index_3) == "X" || position_taken?(board, win_index_3) == "O"
     else
-      !position_taken?(board, index)
+      false
     end
   end
 end
