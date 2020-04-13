@@ -66,7 +66,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |one_set_of_winning_combination|
     one_set_of_winning_combination.each do |index|
       if position_taken?(board, "#{index}".to_i) == "X" || position_taken?(board, "#{index}".to_i) == "O"
-        "#{one_set_of_winning_combination}"
+        "#{index}"
       else
         false
       end
