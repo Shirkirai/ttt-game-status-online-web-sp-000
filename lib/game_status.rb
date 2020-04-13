@@ -63,12 +63,9 @@ WIN_COMBINATIONS = [
 #Define #won method below
 
 def won?(board)
-  WIN_COMBINATIONS.each do |set_of_winning_combination|
-    set_of_winning_combination.each do |single_winning_combination|
-      if position_taken?(board, index) == 0
-        return "#{single_winning_combination}"
-      else
-        false
+  WIN_COMBINATIONS.each do |sets_of_winning_combination|
+    if sets_of_winning_combination.any? {|winning_combination| winning_combination == 0}
+      return winning_combination
       end
     end
   end
