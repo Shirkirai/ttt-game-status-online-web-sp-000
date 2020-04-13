@@ -14,3 +14,11 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [6,4,2]
 ]
+
+#Define #won method below
+
+def won?(board)
+  WIN_COMBINATIONS.each do |combination|
+    combination.each do |position|
+      if "#{position}" = ["X", "X", "X"].all? == 0
+        combination
