@@ -104,6 +104,7 @@ end
 
 def winner(board)
   win_index = []
+  win_index = won?(board)
   if win_index == false
     return nil
   else
