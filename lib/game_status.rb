@@ -86,6 +86,6 @@ def full?(board)
   if board.any?{|blank_space| blank_space == "" || blank_space == " "}
     return false
   elsif !won?(board)
-    return false
+    return true
   end
 end
