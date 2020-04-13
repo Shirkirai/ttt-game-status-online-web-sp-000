@@ -66,11 +66,4 @@ def won?(board)
   position_taken?(board, index)
   WIN_COMBINATIONS.each do |one_set_of_winning_combination|
     one_set_of_winning_combination.each do |index|
-      if position_taken?(board, index)
-    if "#{sets_of_winning_combination}".any?{|winning_combination| winning_combination == 0}
-      return "#{winning_combination}"
-    else
-      false
-    end
-  end
-end
+      if position_taken?(board, index) == 0
