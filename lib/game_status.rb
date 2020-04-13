@@ -63,7 +63,6 @@ WIN_COMBINATIONS = [
 #Define #won method below
 
 def won?(board)
-  position_taken?(board, index)
   WIN_COMBINATIONS.each do |one_set_of_winning_combination|
     one_set_of_winning_combination.each do |index|
       if position_taken?(board, "#{index}") == "X" || position_taken?(board, index) == "O"
