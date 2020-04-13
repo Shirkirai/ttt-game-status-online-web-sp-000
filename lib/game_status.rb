@@ -66,4 +66,11 @@ def won?(board)
   position_taken?(board, index)
   WIN_COMBINATIONS.each do |one_set_of_winning_combination|
     one_set_of_winning_combination.each do |index|
-      if position_taken?(board, index) == 0
+      if position_taken?(board, index) == "X" || position_taken?(board, index) == "O"
+        one_set_of_winning_combination.detect{|wc| puts wc}
+      else
+        false
+      end
+    end
+  end
+end
