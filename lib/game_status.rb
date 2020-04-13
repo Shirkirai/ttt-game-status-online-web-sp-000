@@ -84,5 +84,4 @@ end
 
 def full?(board)
   if board.all? {|index| index = "X" || index = "O"}
-  end
 end
